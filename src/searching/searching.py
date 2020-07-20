@@ -16,8 +16,8 @@ def binary_search(arr, target):
     
     left = 0
     right = len(arr) -1
-    while left < right:
-        pivot = int(left+ (right - left)/2)
+    while left <= right:
+        pivot = left+ (right - left)//2
         if arr[pivot] > target:
             right = pivot
         if arr[pivot] < target:
